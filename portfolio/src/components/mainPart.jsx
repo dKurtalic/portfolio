@@ -228,56 +228,57 @@ const MainPart = () => {
                 <div className='flex flex-wrap'>
                     <div className=' gap-4 px-8 pb-28'>
                         <h1 className='text-xl text-white font-bold mt-5 mb-3'>MovieApp</h1>
-                        <div className='cursor-pointer relative group w-56 mb-2 bg-neutral-800 hover:bg-neutral-600 rounded-md p-4'>
-                            <p className='text-base text-white mb-1  '>Movie recommendation app developed within the course "Development of mobile apps" as a mandatory project</p>
+                        <div className='cursor-pointer flex flex-col  justify-center  items-center  group h-[16rem] w-56 mb-2 bg-neutral-800 hover:bg-neutral-600 rounded-md p-4'>
+                            <p className='text-base text-white mb-1  '>Movie recommendation app developed within the course "Mobile app development" as a mandatory project</p>
                             <button className='bg-spotifyGreen m-5 rounded-full px-4 py-2'>Kotlin</button>
                         </div>
                     </div>
 
                     <div className=' gap-4 px-8 pb-28'>
                         <h1 className='text-xl text-white font-bold mt-5 mb-3'>Survey App</h1>
-                        <div className='cursor-pointer relative group w-56 mb-2 bg-neutral-800 hover:bg-neutral-600 rounded-md p-4'>
-                            <p className='text-base text-white mb-1  '>Survey app developed within the course "Development of mobile apps" as a final project at the Faculty of Electrical Engineering Sarajevo</p>
+                        <div className='cursor-pointer flex flex-col  justify-center  items-center group h-[16rem] w-56 mb-2 bg-neutral-800 hover:bg-neutral-600 rounded-md p-4'>
+                            <p className='text-base text-white mb-1  '>Survey app developed within the course "Mobile app development" as a final project</p>
                             <button className='bg-spotifyGreen m-5 rounded-full px-4 py-2'>Kotlin</button>
 
                         </div>
                     </div>
 
                     <div className=' gap-4 px-8 pb-28'>
-                        <h1 className='text-xl text-white font-bold mt-5 mb-3'>Survey App</h1>
-                        <div className='cursor-pointer relative group w-56 mb-2 bg-neutral-800 hover:bg-neutral-600 rounded-md p-4 '>
-                            <p className='text-base text-white mb-1  '>Savoir - online shopping web. Teamwork project developed within the course "Object Oriented Analysis and Design"</p>
-                            <button className='bg-spotifyGreen m-5 rounded-full px-4 py-2'>C#</button>
+                        <h1 className='text-xl text-white font-bold mt-5 mb-3'>Savoir</h1>
+                        <div className='cursor-pointer flex flex-col justify-center items-center h-[16rem] w-56 mb-2 bg-neutral-800 hover:bg-neutral-600 rounded-md p-4'>
+                            <p className='text-base text-white mb-1'>Savoir is an e-commerce website, collaboratively created as a project for the "Object Oriented Analysis and Design" course.</p>
+                            <button className='bg-spotifyGreen rounded-full px-4 py-2'>C#</button>
                         </div>
+
+
                     </div>
 
                     <div className=' gap-4 px-8 pb-28'>
                         <h1 className='text-xl text-white font-bold mt-5 mb-3'>Focus time</h1>
-                        <div className='cursor-pointer relative group w-56 mb-2 bg-neutral-800 hover:bg-neutral-600 rounded-md p-4 '>
-                            <p className='text-base text-white mb-1  '>An app for focusing and making you more productive developed within the course "ZeroToMastery"</p>
+                        <div className='cursor-pointer flex flex-col  justify-center  items-center  group h-[16rem] w-56 mb-2 bg-neutral-800 hover:bg-neutral-600 rounded-md p-4 '>
+                            <p className='text-base text-white mb-1  '>An application designed to enhance focus and productivity developed as part of the "ZeroToMastery" course.</p>
                             <button className='bg-spotifyGreen m-5 rounded-full px-4 py-2'>JavaScript</button>
                         </div>
                     </div>
 
                     <div className=' gap-4 px-8 pb-28'>
                         <h1 className='text-xl text-white font-bold mt-5 mb-3'>Meals To Go</h1>
-                        <div className='cursor-pointer relative group w-56 mb-2 bg-neutral-800 hover:bg-neutral-600 rounded-md p-4 '>
-                            <p className='text-base text-white mb-1  '>An e-commerce restaurant recommendation app developed withing the course "ZeroToMastery"</p>
+                        <div className='cursor-pointer flex flex-col  justify-center  items-center  group h-[16rem] w-56 mb-2 bg-neutral-800 hover:bg-neutral-600 rounded-md p-4 '>
+                            <p className='text-base text-white mb-1  '>A restaurant recommendation application for e-commerce purposes was developed as part of the "ZeroToMastery" course.</p>
                             <button className='bg-spotifyGreen m-5 rounded-full px-4 py-2'>JavaScript</button>
                         </div>
                     </div>
 
                     <div className=' gap-4 px-8 pb-28'>
                         <h1 className='text-xl text-white font-bold mt-5 mb-3'>Schedule Web App</h1>
-                        <div className='cursor-pointer relative group w-56 mb-2 bg-neutral-800 hover:bg-neutral-600 rounded-md p-4 '>
-                            <p className='text-base text-white mb-1  '>The project was developed as part of the Web Technologies course at the Faculty of Electrical Engineering Sarajevo.</p>
+                        <div className='cursor-pointer flex flex-col  justify-center  items-center  group h-[16rem] w-56 h-30 mb-2 bg-neutral-800 hover:bg-neutral-600 rounded-md p-4 '>
+                            <p className='text-base text-white mb-1  '>A school schedule web application developed as part of the "Web Technologies" course at the Faculty of Electrical Engineering Sarajevo</p>
                             <button className='bg-spotifyGreen m-5 rounded-full px-4 py-2'>JavaScript</button>
                         </div>
                     </div>
                 </div>
                 <div className='flex flex-wrap justify-between ms-5 me-5'>
                     {
-
                         technologiesLogos.map((technology) => {
                             return (
                                 <div className='gap-5 m-6  rounded-full w-10 h-10'>
