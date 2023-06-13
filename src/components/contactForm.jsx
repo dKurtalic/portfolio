@@ -161,7 +161,7 @@ const ContactForm = () => {
                 </div>
             </div>
             <div className='m-auto justify-content items-center'>
-                <h1 className="text-2xl font-bold text-white mt-10 ml-10">or spin me around!</h1>
+                <h1 className="text-2xl font-bold text-white mt-10 ml-10">or spin it around!</h1>
                 <Threedmodel />
             </div>
 
