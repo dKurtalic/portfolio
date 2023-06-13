@@ -34,7 +34,10 @@ export default {
         gray: '#888a89',
         lightGray: '#f4f6f9',
         googlePlava: '#007bff',
-        spotifyGreen: '#1DB954'
+        spotifyGreen: '#1DB954',
+        darkerSpotifyGreen: '#15853c',
+        mediumGray: '#0f0f0f',
+        grayText: '#afafaf'
       }
     },
   },

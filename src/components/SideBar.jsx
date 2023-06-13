@@ -41,16 +41,17 @@ const SideBar = () => {
 
     return (
         <div className=' lg:h-full bg-black  p-5 text-white flex-wrap'>
-            <h6 className='font-bold mt-8 mb-5'>Contant information</h6>
+
+            <h6 className='font-bold ml-2 b-5'>Contact information</h6>
             <div className='p-2 m-2'>
-                <AiOutlineMail className='m-2' />
+                <AiOutlineMail className='my-2' />
                 <p>dkurtalic1@etf.unsa.ba</p>
                 <p>dina.kurtalic@gmail.com</p>
             </div>
 
             <div className='p-2 cursor-pointer'>
                 <a href="https://www.linkedin.com/in/dina-kurtali%C4%87-382735201" target="_blank" rel="noopener noreferrer">
-                    <BsLinkedin className='m-2' />
+                    <BsLinkedin className='my-2' />
                     <p>LinkedIn profile</p>
                 </a>
             </div>
@@ -58,15 +59,18 @@ const SideBar = () => {
             <div className='p-2 cursor-pointer'>
                 <a href="https://www.google.com/maps/place/sarajevo+bosnia+and+herzegovina/data=!4m2!3m1!1s0x4758cbb1ed719bd1:0x562ecda6de87b33e?sa=X&ved=2ahUKEwjZrqbo0b3_AhXChP0HHYYfDDAQ8gF6BAgOEAE" target="_blank" rel="noopener noreferrer">
 
-                    <SlLocationPin className='m-2' />
+                    <SlLocationPin className='my-2' />
                     <p className=''>Sarajevo,</p><p>Bosnia and Herzegovina</p>
                 </a>
             </div>
 
             <div className='p-2'>
-                <AiOutlineMobile className='m-2' />
+                <AiOutlineMobile className='my-2' />
                 <p>+38762761758</p>
             </div>
+
+
+
 
             <h6 className='font-bold mt-8 mb-5'>Languages</h6>
             <div className="flex flex-col">
