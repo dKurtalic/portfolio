@@ -8,7 +8,7 @@ const App = () => {
       <div className='sm:order-1 md:order-2'>
         <MainPart />
       </div>
-      <div className='lg:order-1 lg:w-[30%] lg:h-full sm:order-2 md:order-2'>
+      <div className='lg:order-1 lg:w-[30%] lg:h-max sm:order-2 md:order-2'>
         <SideBar />
       </div>
     </div>
