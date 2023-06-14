@@ -37,7 +37,8 @@ export default {
         spotifyGreen: '#1DB954',
         darkerSpotifyGreen: '#15853c',
         mediumGray: '#0f0f0f',
-        grayText: '#afafaf'
+        grayText: '#afafaf',
+        green: '#34b789'
       }
     },
   },

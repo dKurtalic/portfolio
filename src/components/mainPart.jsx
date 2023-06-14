@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import PhotoImg from '../assets/etf_logo.svg'
+import etf from '../assets/etf_logo.svg'
 import portret from '../assets/portret.jfif'
 import diplomska from '../assets/diplomska.jpg'
 import bhff from '../assets/bhff.png'
@@ -54,10 +54,8 @@ const MainPart = () => {
 
     return (
         <div className=' bg-zinc-900'>
-
-
             <div className=' bg-zinc-900'>
-                <section className="flex items-end space-x-7 bg-gradient-to-b from-spotifyGreen to-zinc-900 h-80 text-white  p-8">
+                <section className="flex items-end space-x-7 bg-gradient-to-b from-green to-zinc-900 h-80 text-white  p-8">
                     <img className='h-[14rem]  rounded-full' src={diplomska} />
                     <div>
                         <p className='text-sm font-bold'>Applicant</p>
@@ -68,36 +66,14 @@ const MainPart = () => {
 
                     <div className='text-white px-8 flex flex-col space-y-1 pb-6'>
                         <h1 className="text-2xl font-bold  text-white ml-7 mt-3">Education</h1>
-
-                        <div
-                            onMouseEnter={() => setHover(true)}
-                            onMouseLeave={() => setHover(false)}
-                            className='text-white text-sm py-4 px-5 hover:bg-white hover:bg-opacity-10 rounded-lg cursor-default'
-                        >
-                            <div className='flex flex-wrap items-center justify-between'>
-                                <div className='flex items-center'>
-                                    <div className='text-lightGray mr-3'>1</div>
-                                    <img className='h-16 w-16 rounded-xl bg-white p-2' src={PhotoImg} alt="Faculty Logo" />
-                                    <div className='ml-3'>
-                                        <h1 className='hover:underline font-bold text-lg'>Faculty of Electrical Engineering Sarajevo</h1>
-                                        <p className='text-lightGray text-sm'></p>
-                                    </div>
-                                </div>
-                                <div></div>
-                                <div>2020-2023</div>
-                            </div>
-                        </div>
+                        <EducationElement number="1" title="Faculty of Electrical Engineering Sarajevo" link="https://www.etf.unsa.ba/en/o-nama" image={etf} description="Department for Computer Science and Informatics" description2="Bachelor degree" timeSpan="2020-2023" />
                         <h1 className="text-2xl font-bold  text-white ml-7 mt-3">Leadership and Entrepreneurship</h1>
-
 
                         <EducationElement number="1" title="BH Futures Foundation" link="https://www.bhfuturesfoundation.org/" description2="Mentoring, Marketing" timeSpan="2020-today" image={bhff} description="One-of-a-kind innovative and prestigious talent-growth program for exceptional individuals in B&H" />
                         <EducationElement number="2" title="BOLD Fellowship | University at Buffalo School of Management" link="https://network2020.org/entrepreneurial-diplomacy/southeast-europe/about-the-bold-fellowship-program/" description="Selected as one of the most prosperous candidates from B&H. The BOLD Fellowship Program funded by the United States Department and organized by Network 20/20. It is intensive training in entrepreneurship and leadership at the University of Buffalo School of Management and New York City, giving me a strong foundation for launching ventures and driving business success" description2="Mentoring, Marketing, IT program" image={netwrok2020} timeSpan="2020-today" />
-                        <EducationElement number="3" title="Startup Adoréa" image={adorea} link="https://adorea.ba/" description="Smart-tech accessories combined with safety app" timeSpan="2022-today" />
+                        <EducationElement number="3" title="Startup Adoréa" image={adorea} link="https://adorea.ba/" description="Smart-tech accessories combined with a safety app" timeSpan="2022-today" />
                         <EducationElement number="4" title="Innovation Nation" image={innovationNation} link="https://www.bhfuturesfoundation.org/innovation-nation-2022" description2="Raised $1700" timeSpan="2022" description="Innovation Nation Program, the most prestigious and comprehensive entrepreneurship program in Bosnia & Herzegovina." />
                         <EducationElement number="5" title="Youth Innovation Award" image={yia} description2="Raised $900" timeSpan="2022" description="Startup competition organized by the Ambassador of the Kingdom of the Netherland and Institute KULT" />
-
-
-
 
                     </div>
                 </div>
