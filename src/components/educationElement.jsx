@@ -17,7 +17,7 @@ const EducationElement = ({ number, title, description, description2, image, tim
                         <div className='flex flex-col '>
                             <h1 className='hover:underline font-bold text-lg'>{title}</h1>
                             <p className="text-sm break-word text-lightGray">
-                                {isHovered1 ? description : description.substring(0, 150) + '...'}
+                                {isHovered1 ? description : description.length > 170 ? description.substring(0, 170) + '...' : description}
                             </p>
 
                         </div>
