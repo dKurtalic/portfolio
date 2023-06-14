@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import Item from './item';
 import PhotoImg from '../assets/etf_logo.svg'
 import portret from '../assets/portret.jfif'
 import diplomska from '../assets/diplomska.jpg'
