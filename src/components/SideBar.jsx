@@ -40,7 +40,8 @@ const SideBar = () => {
 
 
     return (
-        <div className=' lg:h-full bg-black  p-5 text-white flex-wrap'>
+
+        <div className="top-0  eft-0  bg-black p-5 text-white">
 
             <h6 className='font-bold ml-2 b-5'>Contact information</h6>
             <div className='p-2 m-2'>
@@ -50,9 +51,9 @@ const SideBar = () => {
             </div>
 
             <div className='p-2 cursor-pointer'>
-                <a href="https://www.linkedin.com/in/dina-kurtali%C4%87-382735201" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/dina-kurtali%C4%87-382735201" target="_blank" rel="noopener noreferrer ">
                     <BsLinkedin className='my-2' />
-                    <p>LinkedIn profile</p>
+                    <p className='hover:underline'>LinkedIn profile</p>
                 </a>
             </div>
 
@@ -60,7 +61,7 @@ const SideBar = () => {
                 <a href="https://www.google.com/maps/place/sarajevo+bosnia+and+herzegovina/data=!4m2!3m1!1s0x4758cbb1ed719bd1:0x562ecda6de87b33e?sa=X&ved=2ahUKEwjZrqbo0b3_AhXChP0HHYYfDDAQ8gF6BAgOEAE" target="_blank" rel="noopener noreferrer">
 
                     <SlLocationPin className='my-2' />
-                    <p className=''>Sarajevo,</p><p>Bosnia and Herzegovina</p>
+                    <p className='hover:underline'>Sarajevo, Bosnia and Herzegovina</p>
                 </a>
             </div>
 
@@ -130,17 +131,21 @@ const SideBar = () => {
                     })
                 }
             </div>
-            <div className="h-screen flex flex-col bg-black">
-                <div className="flex-grow">
-                </div>
-            </div>
-            <div className="h-screen flex flex-col bg-black">
-                <div className="flex-grow">
-                </div>
-            </div>
 
 
-        </div>
+
+            <div className='hidden lg:block'>
+                <div className='h-screen' />
+                <div className='h-screen' />
+                <div className='h-screen' />
+                <div className='h-screen' />
+                <div className='h-screen' />
+                <div className='h-[40vh]' />
+            </div>
+
+        </div >
+
+
     )
 }
 

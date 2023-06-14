@@ -13,7 +13,7 @@ const ProjectOverview = ({ name, description, images, link }) => {
 
                         {images.map((slika) => {
                             return (
-                                <img className='h-60 mb-4 rounded-xl' src={slika} />
+                                <img className='lg:h-[23rem]  mb-4 rounded-xl' src={slika} />
                             )
                         })}
 

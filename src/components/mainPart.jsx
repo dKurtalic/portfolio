@@ -24,15 +24,16 @@ import rgProject3 from '../assets/rgProject3.jpg'
 import rgProject4 from '../assets/rgProject4.jpg'
 import ProjectSmallOverview from './projectSmallOverview';
 import ContactForm from './contactForm';
+import EducationElement from './educationElement';
 
 
 
 const MainPart = () => {
-    const [isHovered1, setIsHovered1] = useState(false);
-    const [hover, setHover] = useState(false)
+
     const [opacity, setOpacity] = useState(0)
     const [textOpacity, setTextOpacity] = useState(0)
-
+    const [isHovered1, setIsHovered1] = useState(false);
+    const [hover, setHover] = useState(false)
 
 
     function changeOpacity(scrollPos) {
@@ -80,143 +81,25 @@ const MainPart = () => {
                                     <img className='h-16 w-16 rounded-xl bg-white p-2' src={PhotoImg} alt="Faculty Logo" />
                                     <div className='ml-3'>
                                         <h1 className='hover:underline font-bold text-lg'>Faculty of Electrical Engineering Sarajevo</h1>
-                                        <p className='text-lightGray text-sm'>Department for Computer Science and Informatics</p>
+                                        <p className='text-lightGray text-sm'></p>
                                     </div>
                                 </div>
-                                <div>Bachelor degree</div>
+                                <div></div>
                                 <div>2020-2023</div>
                             </div>
                         </div>
                         <h1 className="text-2xl font-bold  text-white ml-7 mt-3">Leadership and Entrepreneurship</h1>
 
-                        <div
-                            onMouseEnter={() => setHover(true)}
-                            onMouseLeave={() => setHover(false)}
-                            className='text-white text-sm py-4 px-5 hover:bg-white hover:bg-opacity-10 rounded-lg cursor-default'
-                        >
-                            <div className='flex flex-wrap items-center justify-between space-x-3'>
-                                <div className='flex items-center space-x-3      md:w-[45%]'>
-                                    <div className='text-lightGray mr-3'>1</div>
-                                    <img className='h-16 w-16 rounded-xl bg-white p-2' src={bhff} alt="Faculty Logo" />
-                                    <div className='flex flex-col '>
-                                        <h1 className='hover:underline font-bold text-lg'>BH Futures Foundation</h1>
-                                        <p className='text-sm break-word text-lightGray'>One-of-a-kind innovative and prestigious talent-growth program for exceptional individuals in B&H</p>
-                                    </div>
-                                </div>
-                                <div className='flex flex-col space-y-1'>
-                                    <div>Mentoring, Marketing, IT program</div>
 
-                                </div>
-                                <div>2020-today</div>
-
-                            </div>
+                        <EducationElement number="1" title="BH Futures Foundation" link="https://www.bhfuturesfoundation.org/" description2="Mentoring, Marketing" timeSpan="2020-today" image={bhff} description="One-of-a-kind innovative and prestigious talent-growth program for exceptional individuals in B&H" />
+                        <EducationElement number="2" title="BOLD Fellowship | University at Buffalo School of Management" link="https://network2020.org/entrepreneurial-diplomacy/southeast-europe/about-the-bold-fellowship-program/" description="Selected as one of the most prosperous candidates from B&H. The BOLD Fellowship Program funded by the United States Department and organized by Network 20/20. It is intensive training in entrepreneurship and leadership at the University of Buffalo School of Management and New York City, giving me a strong foundation for launching ventures and driving business success" description2="Mentoring, Marketing, IT program" image={netwrok2020} timeSpan="2020-today" />
+                        <EducationElement number="3" title="Startup Adoréa" image={adorea} link="https://adorea.ba/" description="Smart-tech accessories combined with safety app" timeSpan="2022-today" />
+                        <EducationElement number="4" title="Innovation Nation" image={innovationNation} link="https://www.bhfuturesfoundation.org/innovation-nation-2022" description2="Raised $1700" timeSpan="2022" description="Innovation Nation Program, the most prestigious and comprehensive entrepreneurship program in Bosnia & Herzegovina." />
+                        <EducationElement number="5" title="Youth Innovation Award" image={yia} description2="Raised $900" timeSpan="2022" description="Startup competition organized by the Ambassador of the Kingdom of the Netherland and Institute KULT" />
 
 
 
 
-                        </div>
-                        <div
-                            onMouseEnter={() => setIsHovered1(true)}
-                            onMouseLeave={() => setIsHovered1(false)}
-                            className={`text-white text-sm py-4 px-5 hover:bg-white hover:bg-opacity-10 rounded-lg cursor-default`}
-                        >
-                            <div className='flex flex-wrap items-center justify-between space-x-3 mt-5'>
-                                <div className='flex items-center space-x-3 lg:w-[45%] md:w-[45%]'>
-                                    <div className='text-lightGray mr-3'>2</div>
-                                    <img className='h-16 w-16 rounded-xl bg-white p-2' src={netwrok2020} alt="Faculty Logo" />
-                                    <div className='flex flex-col '>
-                                        <h1 className='hover:underline font-bold text-lg'>BOLD Fellowship | University at Buffalo School of Management</h1>
-                                        <p className='text-sm break-word text-lightGray'>
-                                            {isHovered1
-                                                ? "Selected as one of the most prosperous candidates from B&H. The BOLD Fellowship Program funded by the United States Department and organized by Network 20/20. It is intensive training in entrepreneurship and leadership at the University of Buffalo School of Management and New York City, giving me a strong foundation for launching ventures and driving business success"
-                                                : ("Selected as one of the most prosperous candidates from B&H. The BOLD Fellowship Program funded by the United States Department and organized by Network 20/20. It is intensive training in entrepreneurship and leadership at the University of Buffalo School of Management and New York City, giving me a strong foundation for launching ventures and driving business success".substring(0, 150) + '...')}
-                                        </p>
-                                    </div>
-                                </div>
-                                <div className='flex flex-col space-y-1'>
-                                    <div>Mentoring, Marketing, IT program</div>
-
-                                </div>
-                                <div>2020-today</div>
-                            </div>
-                        </div>
-
-
-                        <div
-                            onMouseEnter={() => setIsHovered1(true)}
-                            onMouseLeave={() => setIsHovered1(false)}
-                            className={`text-white text-sm py-4 px-5 hover:bg-white hover:bg-opacity-10 rounded-lg cursor-default`}
-                        >
-                            <div className='flex flex-wrap items-center justify-between space-x-3 mt-5'>
-                                <div className='flex items-center space-x-3 lg:w-[45%] md:w-[45%]'>
-                                    <div className='text-lightGray mr-3'>3</div>
-                                    <img className='h-16 w-16 rounded-xl bg-white p-2' src={adorea} alt="Faculty Logo" />
-                                    <div className='flex flex-col '>
-                                        <h1 className='hover:underline font-bold text-lg'>Startup Adoréa</h1>
-                                        <p className='text-sm break-word text-lightGray'>
-                                            Smart-tech accessories combined with safety app
-                                        </p>
-                                    </div>
-                                </div>
-                                <div className='flex flex-col space-y-1'>
-                                    <div></div>
-
-                                </div>
-                                <div>2020-today</div>
-                            </div>
-                        </div>
-
-                        <div
-                            onMouseEnter={() => setIsHovered1(true)}
-                            onMouseLeave={() => setIsHovered1(false)}
-                            className={`text-white text-sm py-4 px-5 hover:bg-white hover:bg-opacity-10 rounded-lg cursor-default`}
-                        >
-
-                            <div className='flex flex-wrap items-center justify-between space-x-3 mt-5'>
-                                <div className='flex items-center space-x-3 lg:w-[45%] md:w-[45%]'>
-                                    <div className='text-lightGray mr-3'>4</div>
-                                    <img className='h-16 w-16 rounded-xl bg-white p-2' src={innovationNation} alt="Faculty Logo" />
-                                    <div className='flex flex-col '>
-                                        <h1 className='hover:underline font-bold text-lg'>Innovation Nation</h1>
-                                        <p className='text-sm break-word text-lightGray'>
-                                            Innovation Nation Program, the most prestigious and comprehensive entrepreneurship program in Bosnia & Herzegovina.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div className='flex flex-col space-y-1'>
-                                    <div>Raised 3.000 BAM</div>
-
-                                </div>
-                                <div>2022</div>
-                            </div>
-                        </div>
-
-
-                        <div
-                            onMouseEnter={() => setIsHovered1(true)}
-                            onMouseLeave={() => setIsHovered1(false)}
-                            className={`text-white text-sm py-4 px-5 hover:bg-white hover:bg-opacity-10 rounded-lg cursor-default`}
-                        >
-                            <div className='flex flex-wrap items-center justify-between space-x-3 mt-5'>
-                                <div className='flex items-center space-x-3 lg:w-[45%] md:w-[45%]'>
-                                    <div className='text-lightGray mr-3'>5</div>
-                                    <img className='h-16 w-16 rounded-xl bg-white p-2' src={yia} alt="Faculty Logo" />
-                                    <div className='flex flex-col '>
-                                        <h1 className='hover:underline font-bold text-lg'>Youth Innovation Award</h1>
-                                        <p className='text-sm break-word text-lightGray'>
-                                            Startup competition organized by the Ambassador of the Kingdom of the Netherland and Institute KULT
-                                        </p>
-                                    </div>
-                                </div>
-                                <div className='flex flex-col space-y-1'>
-                                    <div>Raised 1.500 BAM</div>
-
-                                </div>
-                                <div>2022</div>
-                            </div>
-
-
-                        </div>
                     </div>
                 </div>
 
@@ -224,11 +107,11 @@ const MainPart = () => {
 
                 <h2 className='text-2xl font-bold px-8 text-white'>Projects</h2>
                 <ProjectOverview name="StartApp" images={[StartAppExplore, StartAppLogin, StartAppRegister]} description="The inspiration behind the StartApp application stems from my participation in the BOLD Fellowship Program for Entrepreneurship in New York, USA. As a member of the BOLD Cohort, our collective objective is to enhance the entrepreneurship ecosystem in Bosnia and Herzegovina. To contribute towards this goal, I am currently developing a web application that seeks to facilitate connections between founders and potential teammates with specific skillsets. By simplifying the process of finding co-founders and stakeholders, the aim is to enable easier collaboration and foster the growth of innovative ventures in the region." link="https://github.com/dKurtalic/boldapp" />
-                <ProjectOverview name="Quick" images={[quickExplore, quickVideo, quickChannel]} description="Ad-free Youtube-Student project for practicing" link="https://github.com/dKurtalic/quikk" />
+                <ProjectOverview name="Quik" images={[quickExplore, quickVideo, quickChannel]} description="Ad-free Youtube - Student project for practicing" link="https://github.com/dKurtalic/quikk" />
                 <ProjectOverview name="Computer graphics App" images={[rgProject1, rgProject2, rgProject3, rgProject4]} description="The application allows users to scan a reference photo and then presents a 3D object within the app. Users can interact with the object and access additional information about it within the game. The 3D object was created using Blender, while the app itself was developed using Unity." />
 
 
-                <div className='flex flex-wrap'>
+                <div className='flex flex-wrap justify-center'>
 
                     <ProjectSmallOverview name="Movie app" description="Movie recommendation app developed within the course 'Mobile app development'" language="Kotlin" link="https://github.com/dKurtalic/MovieApp" />
                     <ProjectSmallOverview name="Survey App" description="Survey app developed within the course 'Mobile app development' as a final project" language="Kotlin" link="https://github.com/dKurtalic/SurveyApp" />
@@ -245,7 +128,7 @@ const MainPart = () => {
                     {
                         technologiesLogos.map((technology) => {
                             return (
-                                <div className='gap-5 m-6  rounded-full w-10 h-10'>
+                                <div className='gap-5 m-6  rounded-full w-12 h-12'>
                                     <img src={technology.icon} />
                                 </div>
                             )

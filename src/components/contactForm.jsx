@@ -50,7 +50,7 @@ const ContactForm = () => {
     }
 
     return (
-        <div className="mb-10 lg:flex lg:flex-wrap md:flex md:flex-wrap">
+        <div className="mb-10 lg:ml-10 lg:flex lg:flex-wrap md:flex md:flex-wrap">
             <div>
                 <h1 className="text-2xl font-bold text-white ml-7 mt-10">Contact me!</h1>
 
