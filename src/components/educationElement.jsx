@@ -12,7 +12,7 @@ const EducationElement = ({ number, title, description, description2, image, tim
             <a href={link}>
                 <div className='flex flex-wrap items-center justify-between space-x-3 mt-5'>
                     <div className='flex items-center space-x-3 lg:w-[45%] md:w-[45%]'>
-                        <div className='text-lightGray mr-3'>2</div>
+                        <div className='text-lightGray mr-3'>{number}</div>
                         <img className='h-16 w-16 rounded-xl bg-white p-2' src={image} alt="Logo" />
                         <div className='flex flex-col '>
                             <h1 className='hover:underline font-bold text-lg'>{title}</h1>

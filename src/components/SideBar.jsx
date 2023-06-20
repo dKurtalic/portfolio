@@ -11,7 +11,7 @@ const SkillButton = ({ skill }) => {
 
     const handleMouseLeave = (e) => {
         e.target.style.transform = 'scale(1)';
-        e.target.style.backgroundColor = 'green';
+        e.target.style.backgroundColor = '#34b789';
     };
 
     return (

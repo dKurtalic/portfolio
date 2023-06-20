@@ -24,7 +24,7 @@ import rgProject4 from '../assets/rgProject4.jpg'
 import ProjectSmallOverview from './projectSmallOverview';
 import ContactForm from './contactForm';
 import EducationElement from './educationElement';
-
+import downloadFile from '../../downloader';
 
 
 const MainPart = () => {
@@ -55,7 +55,8 @@ const MainPart = () => {
     return (
         <div className=' bg-zinc-900'>
             <div className=' bg-zinc-900'>
-                <section className="flex items-end space-x-7 bg-gradient-to-b from-green to-zinc-900 h-80 text-white  p-8">
+                <section className="flex items-end space-x-2 bg-gradient-to-b from-green to-zinc-900 h-80 text-white  p-3 mb-4 pl-5">
+                    <button className='absolute top-5 right-5 rounded-full m-2 p-5 shadow-md bg-emerald-400' onClick={() => downloadFile("../assets/PismoPreporuke_DženanaĐonko.pdf")}>Letter of recommendation</button>
                     <img className='h-[14rem]  rounded-full' src={diplomska} />
                     <div>
                         <p className='text-sm font-bold'>Applicant</p>
@@ -81,9 +82,10 @@ const MainPart = () => {
 
 
                 <h2 className='text-2xl font-bold px-8 text-white'>Projects</h2>
+                <p className='text-gray px-8'>To view the repositories, simply click on them.</p>
                 <ProjectOverview name="StartApp" images={[StartAppExplore, StartAppLogin, StartAppRegister]} description="The inspiration behind the StartApp application stems from my participation in the BOLD Fellowship Program for Entrepreneurship in New York, USA. As a member of the BOLD Cohort, our collective objective is to enhance the entrepreneurship ecosystem in Bosnia and Herzegovina. To contribute towards this goal, I am currently developing a web application that seeks to facilitate connections between founders and potential teammates with specific skillsets. By simplifying the process of finding co-founders and stakeholders, the aim is to enable easier collaboration and foster the growth of innovative ventures in the region." link="https://github.com/dKurtalic/boldapp" />
                 <ProjectOverview name="Quik" images={[quickExplore, quickVideo, quickChannel]} description="Ad-free Youtube - Student project for practicing" link="https://github.com/dKurtalic/quikk" />
-                <ProjectOverview name="Computer graphics App" images={[rgProject1, rgProject2, rgProject3, rgProject4]} description="The application allows users to scan a reference photo and then presents a 3D object within the app. Users can interact with the object and access additional information about it within the game. The 3D object was created using Blender, while the app itself was developed using Unity." />
+                <ProjectOverview name="Computer graphics App" images={[rgProject1, rgProject2, rgProject3, rgProject4]} description="The application allows users to scan a reference photo and then presents a 3D object within the app. Users can interact with the object and access additional information about it within the game. The 3D object was created using Blender, while the app itself was developed using Unity." link="https://drive.google.com/drive/folders/1KRQ9aTf0gRJ-b-z2iRyR9Fp-eq2giqMa?usp=sharing" />
 
 
                 <div className='flex flex-wrap justify-center'>

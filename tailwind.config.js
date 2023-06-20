@@ -21,7 +21,7 @@ export default {
         lightBlue: '#ADD8E6',
         turquoiseBlue: '#00CED1',
         trustBlue: '#4169E10',
-        green: '#00AA88',
+        normalGreen: '#00AA88',
         orange: '#FFA500',
         lightBackground: '#F3F2F1',
         earthySand: '#D7BFA6',
