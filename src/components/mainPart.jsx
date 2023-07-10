@@ -61,8 +61,8 @@ const MainPart = () => {
     return (
         <div className=' bg-zinc-900'>
             <div className=' bg-zinc-900'>
-                <section className="flex items-end space-x-2 bg-gradient-to-b from-green to-zinc-900 h-80 text-white  p-3 mb-4 pl-5">
-                    <button className='absolute top-5 right-5 rounded-full m-2 p-5 shadow-md bg-emerald-400' onClick={() => openFile("https://drive.google.com/file/d/1LbjYgmwfohVCrRt4MUIlViAZkTm8Jvki/view?usp=sharing")}>Letter of recommendation</button>
+                <section className="flex items-end space-x-2 bg-gradient-to-b from-lightBlue to-zinc-900 h-80 text-white  p-3 mb-4 pl-5">
+                    <button className='absolute top-5 right-5 rounded-full m-2 p-5 shadow-md bg-steelBlue' onClick={() => openFile("https://drive.google.com/file/d/1LbjYgmwfohVCrRt4MUIlViAZkTm8Jvki/view?usp=sharing")}>Letter of recommendation</button>
                     <img className='h-[14rem]  rounded-full' src={diplomska} />
                     <div>
                         <p className='text-sm font-bold'>Applicant</p>

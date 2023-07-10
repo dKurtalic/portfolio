@@ -38,7 +38,9 @@ export default {
         darkerSpotifyGreen: '#15853c',
         mediumGray: '#0f0f0f',
         grayText: '#afafaf',
-        green: '#34b789'
+        green: '#34b789',
+        orange2: '#e9530e',
+        lightBlue: '#2f75c2'
       }
     },
   },

@@ -16,7 +16,7 @@ const SkillButton = ({ skill }) => {
 
     return (
         <div
-            className="skill-button bg-green text-white rounded-full py-2 px-4 m-2"
+            className="skill-button bg-lightBlue text-white rounded-full py-2 px-4 m-2"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
         >
@@ -78,37 +78,37 @@ const SideBar = () => {
                 <p className="text-sm ml-2">English - C1 (IELTS)</p>
                 <div className="flex items-center mb-2 p-2">
                     <div className="w-full bg-gray-200 rounded-full h-2.5 bg-lightGray">
-                        <div className="bg-green h-2.5 rounded-full w-[100%]" ></div>
+                        <div className="bg-lightBlue h-2.5 rounded-full w-[100%]" ></div>
                     </div>
                 </div>
                 <p className="text-sm ml-2">German - C1 (DSD II)</p>
                 <div className="flex items-center mb-2 p-2">
                     <div className="w-full bg-gray-200 rounded-full h-2.5 bg-lightGray">
-                        <div className="bg-green h-2.5 rounded-full w-[100%]" ></div>
+                        <div className="bg-lightBlue h-2.5 rounded-full w-[100%]" ></div>
                     </div>
                 </div>
                 <p className="text-sm ml-2">Bosnian - native language</p>
                 <div className="flex items-center mb-2 p-2">
                     <div className="w-full bg-gray-200 rounded-full h-2.5 bg-lightGray">
-                        <div className="bg-green h-2.5 rounded-full w-[100%]" ></div>
+                        <div className="bg-lightBlue h-2.5 rounded-full w-[100%]" ></div>
                     </div>
                 </div>
                 <p className="text-sm ml-2">Croatian </p>
                 <div className="flex items-center mb-2 p-2">
                     <div className="w-full bg-gray-200 rounded-full h-2.5 bg-lightGray">
-                        <div className="bg-green h-2.5 rounded-full w-[100%]" ></div>
+                        <div className="bg-lightBlue h-2.5 rounded-full w-[100%]" ></div>
                     </div>
                 </div>
                 <p className="text-sm ml-2">Serbian </p>
                 <div className="flex items-center mb-2 p-2">
                     <div className="w-full bg-gray-200 rounded-full h-2.5 bg-lightGray">
-                        <div className="bg-green h-2.5 rounded-full w-[100%]" ></div>
+                        <div className="bg-lightBlue h-2.5 rounded-full w-[100%]" ></div>
                     </div>
                 </div>
                 <p className="text-sm ml-2">Italian </p>
                 <div className="flex items-center mb-2 p-2">
                     <div className="w-full bg-gray-200 rounded-full h-2.5 bg-lightGray">
-                        <div className="bg-green h-2.5 rounded-full w-[20%]" ></div>
+                        <div className="bg-lightBlue h-2.5 rounded-full w-[20%]" ></div>
                     </div>
                 </div>
             </div>
