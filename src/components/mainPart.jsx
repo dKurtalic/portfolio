@@ -3,6 +3,8 @@ import etf from '../assets/etf_logo.svg'
 import portret from '../assets/portret.jfif'
 import diplomska from '../assets/diplomska.jpg'
 import bhff from '../assets/bhff.png'
+import zendev from '../assets/zendevLogoo.jpg'
+import infobip from '../assets/infobipLogoo.jpg'
 import netwrok2020 from '../assets/network2020logo.png'
 import { technologiesLogos } from '../constants';
 import { AiFillPlayCircle } from 'react-icons/ai'
@@ -70,22 +72,20 @@ const MainPart = () => {
                     </div>
                 </section>
                 <div className='space-y-4'>
-
                     <div className='text-white px-8 flex flex-col space-y-1 pb-6'>
                         <h1 className="text-2xl font-bold  text-white ml-7 mt-3">Education</h1>
                         <EducationElement number="1" title="Faculty of Electrical Engineering Sarajevo" link="https://www.etf.unsa.ba/en/o-nama" image={etf} description="Department for Computer Science and Informatics" description2="Bachelor degree" timeSpan="2020-2023" />
                         <h1 className="text-2xl font-bold  text-white ml-7 mt-3">Leadership and Entrepreneurship</h1>
-
                         <EducationElement number="1" title="BH Futures Foundation" link="https://www.bhfuturesfoundation.org/" description2="Mentoring, Marketing" timeSpan="2020-today" image={bhff} description="One-of-a-kind innovative and prestigious talent-growth program for exceptional individuals in B&H" />
                         <EducationElement number="2" title="BOLD Fellowship | University at Buffalo School of Management" link="https://network2020.org/entrepreneurial-diplomacy/southeast-europe/about-the-bold-fellowship-program/" description="Selected as one of the most prosperous candidates from B&H. The BOLD Fellowship Program funded by the United States Department and organized by Network 20/20. It is intensive training in entrepreneurship and leadership at the University of Buffalo School of Management and New York City, giving me a strong foundation for launching ventures and driving business success" description2="Mentoring, Marketing, IT program" image={netwrok2020} timeSpan="2020-today" />
                         <EducationElement number="3" title="Startup Adoréa" image={adorea} link="https://adorea.ba/" description="Smart-tech accessories combined with a safety app" timeSpan="2022-today" />
                         <EducationElement number="4" title="Innovation Nation" image={innovationNation} link="https://www.bhfuturesfoundation.org/innovation-nation-2022" description2="Raised $1700" timeSpan="2022" description="Innovation Nation Program, the most prestigious and comprehensive entrepreneurship program in Bosnia & Herzegovina." />
                         <EducationElement number="5" title="Youth Innovation Award" image={yia} description2="Raised $900" timeSpan="2022" description="Startup competition organized by the Ambassador of the Kingdom of the Netherland and Institute KULT" />
-
+                        <h1 className="text-2xl font-bold  text-white ml-7 mt-3">Internships</h1>
+                        <EducationElement number="1" title="ZenDev" link="https://www.zendev.se/" description2="Software Engineering Intern" timeSpan="July - Aug 2023" image={zendev} description="A software development company headquartered in Sweden and Bosnia, engaged in client projects, startups, and the development of their proprietary software products. During my internship, I had the opportunity to work on an in-house software solution designed to streamline employee engagement in the company's projects." />
+                        <EducationElement number="2" title="Infobip" link="https://www.infobip.com" description2="Software Engineering Intern" timeSpan="Aug 2023 - current" image={infobip} description="Infobip, a Croatian firm in the IT and telecommunications sector, offers a range of services encompassing omnichannel communications, contact centers, chatbots, customer engagement, customer data platforms, identity, and security solutions. During my internship, I was involved in developing a solution related to email." />
                     </div>
                 </div>
-
-
 
                 <h2 className='text-2xl font-bold px-8 text-white'>Projects</h2>
                 <p className='text-gray px-8'>To view the repositories, simply click on them.</p>
