@@ -21,7 +21,7 @@ export default {
         lightBlue: '#ADD8E6',
         turquoiseBlue: '#00CED1',
         trustBlue: '#4169E10',
-        green: '#00AA88',
+        normalGreen: '#00AA88',
         orange: '#FFA500',
         lightBackground: '#F3F2F1',
         earthySand: '#D7BFA6',
@@ -37,7 +37,10 @@ export default {
         spotifyGreen: '#1DB954',
         darkerSpotifyGreen: '#15853c',
         mediumGray: '#0f0f0f',
-        grayText: '#afafaf'
+        grayText: '#afafaf',
+        green: '#34b789',
+        orange2: '#e9530e',
+        lightBlue: '#2f75c2'
       }
     },
   },

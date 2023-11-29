@@ -56,7 +56,7 @@ const ContactForm = () => {
 
                 <div
                     className="md:w-96 md:max-w-full mt-3">
-                    <div className="p-6 border border-spotifyGreen sm:rounded-md">
+                    <div className="p-6 border border-lightBlue sm:rounded-md">
 
                         <form
                             ref={formRef}
@@ -143,12 +143,12 @@ const ContactForm = () => {
                                         h-10
                                         px-5
                                         text-indigo-100
-                                        bg-spotifyGreen
+                                        bg-lightBlue
                                         rounded-lg
                                         transition-colors
                                         duration-150
                                         focus:shadow-outline
-                                        hover:bg-darkerSpotifyGreen
+                                        hover:vibrantCoral
                   "
                                 >
                                     {loading ? "Sending..." : "Send"}

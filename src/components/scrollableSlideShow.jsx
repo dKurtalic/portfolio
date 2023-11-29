@@ -25,8 +25,8 @@ const ScrollableSlideshow = ({ images }) => {
                     <div className=' cursor-pointer relative group bg-neutral-800 hover:bg-neutral-600 rounded-md p-4' >
                         {images.map((image, index) => (
                             <div className='flex' ref={slideshowRef}>
-                                <div className=' absolute opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-200 shadow-2xl shadow-neutral-900 z-10 h-9 w-9 flex items-center justify-center rounded-full bg-green-500 top-[156px] group-hover:top-[148px] right-6' key={index}>
-                                    <AiFillPlayCircle className='h-10 w-10 text-spotifyGreen' />
+                                <div className=' absolute opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-200 shadow-2xl shadow-neutral-900 z-10 h-9 w-9 flex items-center justify-center rounded-full bg-lightBlue top-[156px] group-hover:top-[148px] right-6' key={index}>
+                                    <AiFillPlayCircle className='h-10 w-10 text-lightBlue' />
                                 </div>
                                 <img className='w-full mb-4 rounded-xl' src={image.src} alt={image.alt} />
                             </div>
