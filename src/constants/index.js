@@ -17,6 +17,9 @@ import StartAppRegister from '../assets/startupregister.jpg'
 import StartAppExplore from '../assets/startupExplore.jpg'
 import unity from '../assets/unity.png'
 import blender from '../assets/blender.png'
+import { AiOutlineMail, AiOutlineMobile } from 'react-icons/ai'
+import { BsLinkedin } from 'react-icons/bs'
+import { SlLocationPin } from 'react-icons/sl'
 
 
 const technologiesLogos = [
@@ -99,6 +102,15 @@ const workImages = [
     },
 ];
 
+const skills = [
+    'Teamwork',
+    'Communication',
+    'Creativity',
+    'Adaptability',
+    'Problem-solving',
+    'Time management',
+    'Continuous learning',
+];
 
 
-export { technologiesLogos, workImages };
+export { technologiesLogos, workImages, skills };

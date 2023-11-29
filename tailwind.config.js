@@ -40,7 +40,8 @@ export default {
         grayText: '#afafaf',
         green: '#34b789',
         orange2: '#e9530e',
-        lightBlue: '#2f75c2'
+        lightBlue: '#2f75c2',
+        darkGray: '#0d0d0f'
       }
     },
   },
