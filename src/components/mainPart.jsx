@@ -144,7 +144,7 @@ const MainPart = () => {
                     }
                 </div>
                 <div>
-                    <h1 className="text-2xl font-bold  text-white ml-7 mt-10">gies</h1>
+                    <h1 className="text-2xl font-bold  text-white ml-7 mt-10">Hobbies</h1>
                     <div className='flex'>
                         <ProjectSmallOverview image={billieEilish} link={"https://www.instagram.com/p/CF-MRoBDjDN/"} />
                         <ProjectSmallOverview image={dancingMonkey} link={"https://www.instagram.com/p/B-7vHpIjNMd/"} />
