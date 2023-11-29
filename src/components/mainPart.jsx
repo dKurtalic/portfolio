@@ -18,7 +18,7 @@ import quickChannel from '../assets/quickChannel.png'
 import quickVideo from '../assets/quickVideo.png'
 import quickExplore from '../assets/quikExplore.png'
 import adorea from '../assets/adorea.png'
-import adoreaVideo from '../assets/Adorea brand video 2022 HQ.mp4'
+import adoreaVideo from '../assets/AdoreaBrandVideo2022compressed.mp4'
 import yia from '../assets/yia.jpg'
 import innovationNation from '../assets/innovationNation.png'
 import rgProject1 from '../assets/rgProject.jpg'
@@ -144,7 +144,7 @@ const MainPart = () => {
                     }
                 </div>
                 <div>
-                    <h1 className="text-2xl font-bold  text-white ml-7 mt-10">Hobbies</h1>
+                    <h1 className="text-2xl font-bold  text-white ml-7 mt-10">gies</h1>
                     <div className='flex'>
                         <ProjectSmallOverview image={billieEilish} link={"https://www.instagram.com/p/CF-MRoBDjDN/"} />
                         <ProjectSmallOverview image={dancingMonkey} link={"https://www.instagram.com/p/B-7vHpIjNMd/"} />
