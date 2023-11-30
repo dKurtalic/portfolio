@@ -153,10 +153,7 @@ const MainPart = () => {
                 </div>
                 <ContactForm />
             </div>
-            <div>
-                <h2 className="text-2xl font-bold  text-black ml-7 mt-10">Prepared for</h2>
-                <img src={cornellTech} />
-            </div>
+            
         </div >
     );
 }
