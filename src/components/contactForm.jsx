@@ -50,8 +50,28 @@ const ContactForm = () => {
     }
 
     return (
-        <div className="mb-10 lg:ml-10 lg:flex lg:flex-wrap md:flex md:flex-wrap">
-            <div>
+        <div className="">
+            <div style={{
+                display: 'inline-block',
+                alignItems: 'center',
+                justifyContent: 'center',
+                marginTop: '3rem',
+                width: '400px',
+                height: '400px'
+            }}>
+                <h1 className="text-2xl font-bold text-white mt-5 ml-5">Spin it around!</h1>
+                <Threedmodel scale={[2.5, 2.5, 2.5]} rotationOption={0} />
+            </div>
+
+        </div>
+
+    );
+};
+
+export default ContactForm;
+
+/*
+<div>
                 <h1 className="text-2xl font-bold text-white ml-7 mt-10">Contact me!</h1>
 
                 <div
@@ -160,15 +180,6 @@ const ContactForm = () => {
                     </div>
                 </div>
             </div>
-            <div className='m-auto justify-content items-center'>
-                <h1 className="text-2xl font-bold text-white mt-10 ml-10">or spin it around!</h1>
-                <Threedmodel />
-            </div>
-
-        </div>
-
-    );
-};
-
-export default ContactForm;
+            
+*/
 

@@ -48,6 +48,7 @@ import cornellTech from '../assets/cornellTechLogo.svg'
 import revolutionary from '../assets/revolutionary.jpg'
 import dancingMonkey from '../assets/dancingMonkey.jpg'
 import billieEilish from '../assets/billie.jpg'
+import Threedmodel from './threedmodel';
 
 const MainPart = () => {
 
@@ -92,6 +93,7 @@ const MainPart = () => {
                         <p className='text-sm font-bold'>Applicant</p>
                         <h1 className='text-2xl md:text-3xl lg:text-5xl font-extrabold'>Dina Kurtalić</h1>
                     </div>
+
                 </section>
                 <div className='space-y-4'>
                     <div className='text-white px-10 flex flex-col space-y-1 pb-6'>
@@ -147,13 +149,12 @@ const MainPart = () => {
                     <h1 className="text-2xl font-bold  text-white ml-7 mt-10">Hobbies</h1>
                     <div className='flex'>
                         <ProjectSmallOverview image={billieEilish} link={"https://www.instagram.com/p/CF-MRoBDjDN/"} />
-                        <ProjectSmallOverview image={dancingMonkey} link={"https://www.instagram.com/p/B-7vHpIjNMd/"} />
                         <ProjectSmallOverview image={revolutionary} link={"https://www.instagram.com/p/B-z7o4WDfDM/"} />
                     </div>
                 </div>
                 <ContactForm />
             </div>
-            
+
         </div >
     );
 }

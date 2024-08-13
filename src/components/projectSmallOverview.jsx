@@ -10,7 +10,7 @@ const ProjectSmallOverview = ({ name, description, language, image, link }) => {
                         <button className='bg-lightBlue m-5 rounded-full px-4 py-2'>{language}</button>
                     </div></>
                 }
-                {image && <img src={image} className=' h-90 p-4' />}
+                {image && <img src={image} className=' h-40 p-1 rounded-2xl' />}
             </div>
         </a>
     )

@@ -3,6 +3,7 @@ import { AiOutlineMail, AiOutlineMobile } from 'react-icons/ai'
 import { BsLinkedin } from 'react-icons/bs'
 import { SlLocationPin } from 'react-icons/sl'
 import { technologiesLogos, skills } from '../constants'
+import Threedmodel from './threedmodel'
 
 
 const handleMouseEnter = (e) => {
@@ -48,7 +49,11 @@ const SideBar = () => {
 
     return (
 
-        <div className="top-0 bg-darkGray p-5 text-white">
+        <div className=" bg-zinc-950 p-5 text-white">
+            <div className='flex' >
+                <h1 className='mt-5 md:text-sm lg:text-xl font-extrabold'>Volkswagen Master's Scholarship</h1>
+                <Threedmodel scale={[1, 1, 1.6]} className='top-0' />
+            </div>
 
             <h6 className='font-bold ml-2 b-5'>Contact information</h6>
 
@@ -91,13 +96,13 @@ const SideBar = () => {
                         <div className="bg-lightBlue h-2.5 rounded-full w-[100%]" ></div>
                     </div>
                 </div>
-                <p className="text-sm ml-2">Italian </p>
+                <p className="text-sm ml-2">Spanish </p>
                 <div className="flex items-center mb-2 p-2">
                     <div className="w-full bg-gray-200 rounded-full h-2.5 bg-lightGray">
                         <div className="bg-lightBlue h-2.5 rounded-full w-[35%]" ></div>
                     </div>
                 </div>
-                <p className="text-sm ml-2">Spanish </p>
+                <p className="text-sm ml-2">Italian</p>
                 <div className="flex items-center mb-2 p-2">
                     <div className="w-full bg-gray-200 rounded-full h-2.5 bg-lightGray">
                         <div className="bg-lightBlue h-2.5 rounded-full w-[10%]" ></div>
