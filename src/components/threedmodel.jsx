@@ -3,7 +3,7 @@ import { Canvas } from '@react-three/fiber';
 import { OrbitControls, Stage } from '@react-three/drei';
 import SpotifyModel from '../components/SpotifyModel';
 import ReactModel from '../components/ReactModel'
-import Model from './Volkswagen';
+import Model from './ReactModel';
 
 /*Presets can be: apartment, city, dawn, forest, lobby, night, park, studio, */
 
