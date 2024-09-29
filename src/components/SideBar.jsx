@@ -4,6 +4,7 @@ import { BsLinkedin } from 'react-icons/bs'
 import { SlLocationPin } from 'react-icons/sl'
 import { technologiesLogos, skills } from '../constants'
 import Threedmodel from './threedmodel'
+import logo from '../assets/p&g_c.png'
 
 
 const handleMouseEnter = (e) => {
@@ -51,8 +52,8 @@ const SideBar = () => {
 
         <div className=" bg-zinc-950 p-5 text-white">
             <div className='flex' >
-                <h1 className='mt-5 md:text-sm lg:text-xl font-extrabold'>Request for a Master's Scholarship</h1>
-                <Threedmodel scale={[1, 1, 1.6]} className='top-0' />
+                <h1 className='mb-10 md:text-sm lg:text-lg font-bold'>Application for a Scholarship for Young Leaders</h1>
+                <Threedmodel imageUrl={logo} className='top-0' />
             </div>
 
             <h6 className='font-bold ml-2 b-5'>Contact information</h6>

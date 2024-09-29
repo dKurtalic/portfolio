@@ -5,15 +5,13 @@ import SpotifyModel from '../components/SpotifyModel';
 import ReactModel from '../components/ReactModel'
 import Model from './ReactModel';
 
+
 /*Presets can be: apartment, city, dawn, forest, lobby, night, park, studio, */
-
-
-const Threedmodel = ({ scale, rotationOption }) => {
+const Threedmodel = ({ scale, rotationOption, imageUrl }) => {
   const [rotation, setRotation] = useState(0);
-
   useEffect(() => {
     const handleScroll = () => {
-      setRotation((prevRotation) => prevRotation + window.scrollY * 0.1);
+      setRotation((prevRotation) => prevRotation + window.scrollY * 0.2);
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -31,17 +29,38 @@ const Threedmodel = ({ scale, rotationOption }) => {
       return [0, 0, rotation]; // Rotate around Z-axis (default)
     }
   };
-
   return (
-    <Canvas style={{ margin: 0, padding: 0, top: 0 }}>
-      <Stage environment="city" intensity={0.2} castShadow>
-        <mesh rotation={rotationOption !== 0 ? getRotation() : undefined}>
-          <Model position={[0, 0, 0]} scale={scale} />
-        </mesh>
-      </Stage>
-      <OrbitControls enableZoom={false} />
-    </Canvas>
+    <>
+      {imageUrl ? (
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+          {/* Image spinning around its own axis */}
+          <img
+            src={imageUrl}
+            alt="scroll-rotating"
+            style={{
+              width: '100px', // Controls the size, can be any value
+              height: 'auto', // Auto adjusts the height to maintain the aspect ratio
+              transform: `rotate(${rotation}deg)`,
+              transformOrigin: 'center center', // Ensure the image rotates around its center
+              transition: 'transform 0.02s linear',
+              objectFit: 'contain',
+
+              paddingTop: '20px'
+            }}
+          />
+        </div>
+      ) : (
+        <Canvas style={{ margin: 0, padding: 0, top: 0 }}>
+          <Stage environment="city" intensity={0.2} castShadow>
+            <mesh rotation={rotationOption !== 0 ? getRotation() : undefined}>
+              <Model position={[0, 0, 0]} scale={scale} />
+            </mesh>
+          </Stage>
+          <OrbitControls enableZoom={false} />
+        </Canvas>
+      )}
+    </>
   );
-};
+}
 
 export default Threedmodel;
