@@ -51,18 +51,15 @@ const SideBar = () => {
     return (
 
         <div className=" bg-zinc-950 p-5 text-white">
-            <div className='flex' >
-                <h1 className='mb-10 md:text-sm lg:text-lg font-bold'>Application for a Scholarship for Young Leaders</h1>
-                <Threedmodel imageUrl={logo} className='top-0' />
-            </div>
+
 
             <h6 className='font-bold ml-2 b-5'>Contact information</h6>
 
             <div className="flex flex-wrap">
-                <ContactButton className='p-2 cursor-pointer' information={"dkurtalic1@etf.unsa.ba\ndina.kurtalic@gmail.com"} icon={<AiOutlineMail />} />
+                <ContactButton className='p-2 cursor-pointer' information={"dina.kurtalic@gmail.com"} icon={<AiOutlineMail />} />
                 <ContactButton className='p-2 cursor-pointer' information={"LinkedIn link"} link={"https://www.linkedin.com/in/dina-kurtali%C4%87-382735201"}></ContactButton>
-                <ContactButton className='p-2 cursor-pointer' information={"Sarajevo, Bosnia and Herzegovina"} link={"https://www.google.com/maps/place/sarajevo+bosnia+and+herzegovina/data=!4m2!3m1!1s0x4758cbb1ed719bd1:0x562ecda6de87b33e?sa=X&ved=2ahUKEwjZrqbo0b3_AhXChP0HHYYfDDAQ8gF6BAgOEAE"} icon={<SlLocationPin />} />
-                <ContactButton className='p-2 cursor-pointer' information={"+38762761758"} icon={<AiOutlineMobile />} />
+                <ContactButton className='p-2 cursor-pointer' information={"Josef-Wirth-Weg 21, München, 80939, Deutschland"} icon={<SlLocationPin />} />
+                <ContactButton className='p-2 cursor-pointer' information={"+49 152 25378994"} icon={<AiOutlineMobile />} />
             </div>
             <h6 className='font-bold mt-8 mb-5'>Languages</h6>
             <div className="flex flex-col">
